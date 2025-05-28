@@ -1,41 +1,53 @@
-Student Management API using Spring Boot  
-Create a REST API for managing student records using Spring Boot and test it using Postman.
+# Student Management System (SMS)
 
-🔧 Tasks:
-Model:
+A simple RESTful API built using Spring Boot, Spring Data JPA, and MySQL to manage student records. This application allows you to perform CRUD (Create, Read, Update, Delete) operations on student data
 
-Student class->
+## Project Structure:
 
-id (Long, auto-generated)
+com.example.StudentManagementApi
 
-name (String)
+├── controller  
+│   └── StudentController.java  
+├── model  
+│   └── Student.java  
+├── repository  
+│   └── StudentRepository.java  
+├── service  
+│   └── Studentservice.java  
+├── StudentManagementApiApplication.java  
+└── resources  
+├── application.properties
 
-email (String)
+## Technologies Used
+- Java
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- MySQL
+- Lombok
+- Postman (for testing)
 
-course (String)
+## Postman Outputs
+1. Add a Student(POST/students)
+![Adding student using Postmapping](https://github.com/SRINJOY30/StudentAPI/blob/main/output/POST.png)
 
-Database Integration
+2. Get all Students(GET/students)
+![Getting all students using Getmapping](https://github.com/SRINJOY30/StudentAPI/blob/main/output/GET.png)
 
-Use either MySQL or H2 for storing student records.
+3. Update a student by id(PUT/students/{id})
+![Update a student details by id](https://github.com/SRINJOY30/StudentAPI/blob/main/output/PUT.png)
 
-Repository:
+4. Delete a student by id(DELETE/students/{id})
+![Delete a student by id](https://github.com/SRINJOY30/StudentAPI/blob/main/output/DELETE.png)
 
-StudentRepository
+5. Table updation on usage of APIs
+![Display of Table in MySQL](https://github.com/SRINJOY30/StudentAPI/blob/main/output/mysql.png)
 
-Service:
+## Uploaded By-
+- Srinjoy Biswas
+   
+   
+   
 
-StudentService 
 
-REST Controller:
 
-Create REST endpoints:-
-
-POST /students – Add a student
-
-GET /students – Get all students
-
-GET /students/{id} – Get student by ID
-
-PUT /students/{id} – Update student by ID
-
-DELETE /students/{id} – Delete student by ID
